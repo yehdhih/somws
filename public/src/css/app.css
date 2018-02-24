@@ -1,0 +1,119 @@
+/*
+ ========================
+   start nav bar
+ ========================  
+ */
+
+
+#menu .navbar-default .navbar-brand {
+    font-family: 'Rex bold inline';
+    color:  #ffff;
+    font-size: 35px;
+    line-height: 32px;
+    height: 60px;
+    margin-bottom:5px ;
+}
+#menu .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #fff;
+}
+#menu .navbar-default .navbar-brand span {
+    font-family: 'Rex light';
+    color: #d4d4d4;
+    font-size: 35px;
+}
+#menu .navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    min-height: 60px;
+}
+#menu .navbar-default .navbar-nav>li>a {
+    color:  #fff;
+   
+    
+    -webkit-transition: color .3s;
+       -moz-transition: color .3s;
+         -o-transition: color .3s;
+            transition: color .3s;
+}
+#menu .navbar-default .navbar-nav>li>a:hover {
+    color:#349044;
+    color:#fff;
+    color:#f3b339;
+}
+
+
+/*  ATIGH MODIFICATION*/
+.navbar{
+    background: #373277;
+    text-decoration: none;
+    
+    font:#fff;
+    color:#FFF;
+}
+
+.dropdown-menu >ul{
+    right: 6px;
+
+}
+.dropdown-menu > li >a {
+    text-decoration: none;
+    background-color: #373277;
+    color: #feb600;
+    margin-right: 3px;
+    margin-left: 3px;
+   
+
+    border-bottom:1px solid #feb600;
+	color:#fff;
+	display:block;
+	font-family:"Open Sans", sans-serif;
+	font-size:16px;
+	font-weight:300;
+	overflow:hidden;
+	padding:12px 20px 12px 15px;
+    transition:all .3s ease-in-out 0;
+    position: relative;
+
+    
+    
+}
+
+
+
+ .dropdown-menu >li > a:hover{
+     
+     color: #feb600;
+ }
+.dropdown:hover{
+    color:#f3b339;
+    display: block;
+}
+a {
+	cursor:pointer
+}
+/*
+ ========================
+   start ifocontact
+ ========================  
+ */
+.contcfull{
+    background: #f6f6f6;
+    padding-bottom: 7px;
+    padding-top:7px;
+}
+.iconces{
+    font-size: 40px;
+    position: center;
+    color: #f3b339;
+    padding-left: 48px;
+}
+
+/*
+ ========================
+   start  footer
+ ========================  
+ */
+.footer{
+    background:#f3b339;
+    padding-bottom: 23px;
+}

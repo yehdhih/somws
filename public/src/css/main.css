@@ -1,0 +1,756 @@
+
+
+/* ===================================================
+                   Custom Fonts
+===================================================== */
+@font-face {
+    font-family: 'Rex bold';
+    src: url(../fonts/RexBold.otf);
+}
+@font-face {
+    font-family: 'Rex light';
+    src: url(../fonts/RexLight.otf);
+}
+@font-face {
+    font-family: 'Rex bold inline';
+    src: url(../fonts/RexBoldInline.otf);
+}
+@font-face {
+    font-family: 'RussoOne Regular';
+    src: url(../fonts/RussoOne-Regular.ttf);
+}
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+/* ===================================================
+                   Common Rule
+===================================================== */
+body{
+    font-family: 'Lato',sans-serif;
+    background:#625377 ;
+    background: #210c33;
+    background: #2d3134;
+    background:#fff;
+    bacground:rgba(228, 220, 220, 0.685)
+
+
+}
+*{
+    -webkit-transition: all .2s;
+       -moz-transition: all .2s;
+         -o-transition: all .2s;
+            transition: all .2s;
+}
+h2,h1,h4{
+    font-family: 'RussoOne Regular';
+    font-size: 35px;
+    color:#6c6c6f;
+}
+
+
+/* ===================================================
+            Navigation Menu & Logo
+===================================================== */
+#menu .navbar-default {
+    background-color: #210c33;
+    border-top: 2px solid  #feb600;
+    border-bottom: 2px solid  #feb600;
+    border-right: none;
+    border-left: none;
+
+
+}
+
+#menu .navbar-default .navbar-brand {
+    font-family: 'Rex bold inline';
+    color:  #feb600;
+    font-size: 35px;
+    line-height: 32px;
+    height: 60px;
+    margin-bottom:5px ;
+}
+#menu .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #0e0e0e;
+}
+#menu .navbar-default .navbar-brand span {
+    font-family: 'Rex light';
+    color: #d4d4d4;
+    font-size: 35px;
+}
+#menu .navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    min-height: 60px;
+}
+#menu .navbar-default .navbar-nav>li>a {
+    color:  #fff;
+    font-size: 18px;
+
+
+    -webkit-transition: color .3s;
+       -moz-transition: color .3s;
+         -o-transition: color .3s;
+            transition: color .3s;
+}
+#menu .navbar-default .navbar-nav>li>a:hover {
+    color:#349044;
+}
+/*#menu .navbar:before {
+        content:"";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        margin-top: -30px;
+        margin-left: -30px;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+
+	border-bottom: 30px solid #d4d4d4;
+        z-index: 99999;
+
+
+}*/
+
+
+/*
+missing code
+#menu .navbar:after {
+        content:"";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        margin-top: 60px;
+        margin-left: 30px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+
+    border-top: 30px solid #d4d4d4;
+        z-index: 99999;
+}
+*/
+#menu .navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 18px;
+}
+
+
+
+
+
+/* ===================================================
+                        Slider
+===================================================== */
+
+
+#slider{
+    cursor: pointer;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+
+.owl-dots {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -30px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.owl-item:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(192, 165, 12, 0);
+    z-index: 1;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #210c33;
+}
+
+.slider-text{
+    position: absolute;
+    top:20%;
+    left:40px;
+    z-index: 9999999;
+
+    padding: 30px;
+
+}
+.slider-text p{
+    font-family: 'RussoOne Regular';
+    font-size: 30px;
+    line-height: 60px;
+    margin-bottom: 0px;
+    color:#220c34;
+}
+.slider-text span{
+    font-size: 19px;
+    margin-bottom: 0px;
+    color: #220c34;
+    text-align: right;
+    float: right;
+}
+
+
+.bottom-line{
+    width:100%;
+    height: 2px;
+    background: #feb600;
+    position: relative;
+}
+/*.bottom-line a{
+        content:"";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        margin-left: -30px;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+
+	border-top: 30px solid #d4d4d4;
+        z-index: 99999;
+        cursor: pointer;
+
+}*/
+/*.bottom-line a:before{
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    top: -31px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -6px;
+    display: block;
+    color: #000;
+}*/
+
+
+
+
+
+/* ===================================================
+                        Contact Page
+===================================================== */
+
+#contact-section{
+    position: relative;
+    overflow: hidden;
+}
+#contact-section h2{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000000;
+    padding-bottom: 40px;
+
+}
+#google-map{
+    width:100%;
+    height: 600px;
+}
+#contact-section a.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-image: -webkit-linear-gradient(0deg, #d4d4d4 42%, hsla(0, 0%, 100%, 0) 81%);
+    background-image: linear-gradient(90deg, #d4d4d4 42%, hsla(0, 0%, 100%, 0) 81%);
+    z-index: 1;
+    cursor: default;
+}
+.contact-form{
+    padding-top: 65px;
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 10;
+}
+.contact-form{}
+.contact-form form.form-horizontal {
+    margin-top: 37px;
+}
+.contact-form .form-control{
+    border-radius: 0px;
+}
+.contact-form .form-group label{
+   color: #333;;
+}
+.contact-form .btn-default {
+    color: #fff;
+    background-color: #000000;
+    border-color: rgba(255, 255, 255, 0);
+}
+.contact-form .btn{
+    padding: 10px 40px;
+    border-radius: 0px;
+}
+.contact-form .btn:focus{
+    outline:none;
+    color: #fff;
+    background-color: #383636;
+}
+.address {
+width: 300px;
+    margin: auto;
+    margin-top: 180px;
+    font-weight: bold;
+    color: #4c4c4c;
+    padding: 15px 15px 1px 15px;
+    background: rgba(255, 255, 255, 0.68);
+
+    -webkit-box-shadow: 0px 0px 11px #bfbaba;
+    -moz-box-shadow: 0px 0px 11px #bfbaba;
+    box-shadow: 0px 0px 11px #bfbaba;
+}
+.address p{
+    font-size: 14px;
+    color: #333;
+}
+#contact-section .checkbox-inline, .radio-inline {
+    margin-left: 15px;
+}
+.form-control:focus {
+    border-color: #7c7e7f;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(68, 68, 68, 0.6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(68, 68, 68, 0.6);
+}
+
+
+
+/* ===================================================
+                        catalogue
+===================================================== */
+
+
+#catalogue{
+    background-color:#4a375a;
+}
+#catalogue .collor{
+    color: #fff
+}
+#catalogue a img{
+    width: 200px;
+    height: 190px;
+   
+    text-decoration: none;
+
+}
+#catalogue .thumbnail a{
+  text-decoration: none;
+  color:#6c6b6f;
+}
+
+
+
+/* ===================================================
+                        5ala6aaaa
+===================================================== */
+
+
+
+  .navbar-default .navbar-toggle .icon-bar{
+    background-color: #feb600;
+    text-decoration:none;
+}
+
+
+#menu .dropdown .dropdown-menu >li >a{
+    background-color: #220c34;
+    color:#FFF;
+    -webkit-transition:padding 0.5s ease;
+       -moz-transition:padding .5s ease;
+         -o-transition:padding .5s ease;
+            transition:padding .5s ease;
+}
+
+#menu .dropdown .dropdown-menu >li >a:hover,
+#menu .dropdown .dropdown-menu >li >a:focus
+{
+    background-color:#feb600;
+    padding-left: 30px;
+
+}
+#menu .navbar-header button{
+    background-color: #220c34;
+    border: 0px
+}
+#menu .dropdown .dropdown-menu {
+   left: 0;
+   right:auto;
+   background-color: #230c34;
+   margin-right: 7px;
+
+
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover{
+  background-color: #feb600;
+}
+/* ===================================================
+                        up-footer
+===================================================== */
+
+#up-footer .iconces {
+    color:#feb600;
+    font-size: 30px;
+    margin-top: 1em;
+
+}
+#up-footer .contact-info {
+    color:#555;
+    font-size: 20px;
+    margin-bottom: 1em;
+
+}
+
+/* ===================================================
+                        footer
+===================================================== */
+
+ #footer1 {
+     background-color:#220c34;
+     padding-top: 9px;
+
+ }
+ #footer1 h4{
+     color:#FFF;
+ }
+ #footer1  li{
+    list-style: none
+ }
+ #footer1  li a{
+    text-decoration: none;
+    color:#FFF;
+    font-size: 19px;
+ }
+ #footer1 h4{
+     font-size: 23px
+
+ }
+ #footer1 .soclink{
+     font-size: 28px;
+     margin-left: 12px;
+     color:#fff;
+     margin-top:3px;
+     -webkit-transition: color .3s;
+     -moz-transition: color .3s;
+       -o-transition: color .3s;
+          transition: color .3s;
+
+ }
+ #footer1 .copie-right{
+     color:#fff;
+ }
+/* ===================================================
+                        clients
+===================================================== */
+#clients{
+    background-color: #f4f4f3;
+}
+#clients h2{
+    font-size:38px;
+
+}
+#clients h2 span{
+    font-size: 28px;
+
+}
+
+#clients .thumbnail img{
+    width: 531px;
+    height: 98px;
+    border-radius: 3px;
+}
+#clients p{
+    font-size: 28px;
+}
+
+/* ===================================================
+                        contact
+===================================================== */
+
+#contact{
+    margin-top:66px;
+    margin-bottom: 10px;
+}
+#contact img{
+  margin-top: 50px;
+  width:100%;
+  max-height:393px;
+}
+
+#contact .contact-text{
+
+    font-size: 28px
+}
+
+/* ===================================================
+                        Quisommenous
+===================================================== */
+#Quisommenous{
+    margin-top:50px;
+
+    background-color: #FFF;
+    padding-bottom:7px
+}
+#Quisommenous .Quisommesnous{
+  background-color:#f8f5e5;
+}
+#Quisommenous .title-paragraphe{
+  font-weight: bold;
+  font-size: 23px;
+}
+#Quisommenous img{
+  width: 100%;
+
+}
+#Quisommenous .content-paragraphe{
+  font-size: 20px;
+
+}
+
+
+/* ===================================================
+                        elecricite
+===================================================== */
+
+#electricite img{
+
+    margin-top: 40px;
+    height: 455px;
+    margin-bottom: 23px;
+}
+
+#electricite .ingelec-description p {
+  font-size:17px;
+  color: #6c6b6f;
+  padding: 4px;
+
+}
+.ingelec-description{
+  background-color: #f4f4f3;
+}
+
+#electricite .product-image{
+  background-color: #484756;
+  background-color: #4a375a;
+  padding-bottom: 8px;
+}
+.product-image img{
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 8px;;
+  margin-top: -12px;
+}
+
+#electricite h3{
+    color: #FFF;
+
+}
+
+/* ===================================================
+                        huiles
+===================================================== */
+#huiles  img {
+    margin-top: 40px;
+    width: 100%;
+    height: 450px;
+   
+}
+
+#huiles .huiles-description {
+    background-color:#f4f4f3
+}
+#huiles .huiles-description p {
+    font-size:17px;
+    color: #6c6b6f;
+    padding: 4px;
+}
+#huiles .huiles-description li  {
+    font-size:17px;
+    color: #6c6b6f;
+}
+#huiles .product-image{
+    background-color: #484756;
+    background-color: #4a375a;
+    padding-bottom: 8px;
+  }
+  .product-image img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;;
+    margin-top: -12px;
+    margin-bottom: 12px;
+  }
+  
+  #huiles h3{
+      color: #FFF;
+  
+  }
+
+
+
+
+/* ===================================================
+                        sika 
+===================================================== */
+#sika  img {
+    margin-top: 40px;
+    width: 100%;
+    height: 450px;
+   
+}
+#sika .sika-description {
+    background-color:#f4f4f3;
+    font-size:17px;
+    
+}
+
+
+  
+  #sika .product-image{
+    background-color: #484756;
+    background-color: #4a375a;
+    padding-bottom: 8px;
+  }
+  .product-image img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;;
+    margin-top: -12px;
+    margin-bottom: 12px;
+  }
+  
+  #sika h3{
+      color: #FFF;
+  
+  }
+
+
+
+/* ===================================================
+                        QUINCAILLERIE
+===================================================== */
+
+
+#QUINCAILLERIE img {
+    margin-top: 40px;
+    width: 100%;
+    height: 450px;
+   
+}
+QUINCAILLERIE .sika-description {
+    background-color:#f4f4f3;
+    font-size:17px;
+    
+}
+
+
+  
+  #QUINCAILLERIE.product-image{
+    background-color: #484756;
+    background-color: #4a375a;
+    padding-bottom: 8px;
+  }
+  .product-image img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;;
+    margin-top: -12px;
+    margin-bottom: 12px;
+  }
+  
+  #QUINCAILLERIE h3{
+      color: #FFF;
+  
+  }  img {
+    margin-top: 40px;
+    width: 100%;
+    height: 450px;
+   
+}
+#QUINCAILLERIE .QUINCAILLERIE-description {
+    background-color:#f4f4f3;
+    font-size:17px;
+    
+}
+
+
+  
+  #QUINCAILLERIE .product-image{
+    background-color: #484756;
+    background-color: #4a375a;
+    padding-bottom: 8px;
+  }
+  .product-image img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;;
+    margin-top: -12px;
+    margin-bottom: 12px;
+  }
+  
+  #QUINCAILLERIE h3{
+      color: #FFF;
+  
+  }
+
+
+  /* ===================================================
+                        groupes
+===================================================== */
+
+#groupes  img {
+    margin-top: 40px;
+    width: 100%;
+    height: 450px;
+   
+}
+#groupes .groupes-description {
+    background-color:#f4f4f3;
+    font-size:17px;
+    padding-bottom: 13px
+    
+}
+
+
+  
+  #groupes .product-image{
+    background-color: #484756;
+    background-color: #4a375a;
+    padding-bottom: 8px;
+  }
+  .product-image img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;;
+    margin-top: -12px;
+    margin-bottom: 12px;
+  }
+  
+  #groupes h3{
+      color: #FFF;
+  
+  }
