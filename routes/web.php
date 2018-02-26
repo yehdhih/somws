@@ -56,5 +56,3 @@ Route::get('/contact', function () {
 Route::get('/Quisommesnous', function () {
     return view('societe.Quisommesnous');
 });
-
-

@@ -10,15 +10,15 @@ SOMACOGIR
   <div class="container">
     <div class="row">
        <div class="col-sm-12 title">
-         <h2 class="text-center collor"> CATALOG </h2>
-       </div> 
+         <h2 class="text-center collor"> CATALOGUES </h2>
+       </div>
 
     </div>
   </div>
 
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-4">
+      <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail text-center">
             <h2>L’ÉCTRICITÉ</h2>
             <a href="{{ url('/electricite') }}">
@@ -33,7 +33,7 @@ SOMACOGIR
       </div>
 
 
-      <div class="col-xs-12 col-sm-4">
+      <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail text-center">
             <h2>QUINCAILLERIE</h2>
             <a href="{{ url('/quincaillerie') }}">
@@ -42,15 +42,15 @@ SOMACOGIR
                 Que vous soyez un professionnel du bâtiment ou un particulier, exigez la quali-
                 té professionnelle pour votre outillage électroportatif, votre outillage à main, les
                 consommables, la quincaillerie et tous les équipements et fournitures dont vous...
-             
-                
+
+
                 <p >
                 </p>
             </a>
         </div>
       </div>
 
-      <div class="col-xs-12 col-sm-4">
+      <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail text-center">
             <h2>GROUPES </h2>
             <a href="{{ url('/groupes') }}">
@@ -61,7 +61,7 @@ SOMACOGIR
                     Dans le secteur des groupes
                     électrogène s
                     PRAMAC
-                    o f f r e d es solutions pour toutes
+                    offre d es solutions pour toutes
                     sortes de besoins: du groupes
                     électrogènes portables ou in-
                     dustriels pour des applications
@@ -74,7 +74,7 @@ SOMACOGIR
         </div>
       </div>
 
-      <div class="col-xs-12 col-sm-4">
+      <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail text-center">
             <h2>ADJUVANTS</h2>
             <a href="{{ url('/sika') }}">
@@ -84,12 +84,12 @@ SOMACOGIR
                     Active au niveau mondial dans les secteurs des spécialités chimiques, elle est
                     fournisseur dans les domaines de l’étanchéité, du collage, de l’insonorisation,
                     du renforcement et de la protection d’ossatures. Sika est représentée dans 94...
-                    
+
                 </p>
             </a>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4">
+      <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail text-center">
             <h2>ACIERS</h2>
             <a href="{{ url('/aciers') }}">
@@ -103,7 +103,7 @@ SOMACOGIR
             </a>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4">
+      <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail text-center">
             <h2>HUILES</h2>
             <a href="{{ url('/huiles') }}">
@@ -117,110 +117,15 @@ SOMACOGIR
             </a>
         </div>
       </div>
-      
-         
+
+
 
 
 
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="">
 
-      </div>
-
-    </div>
-
-  </div>
-  <!--
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-4">
-        <div class="thumbnail text-center">
-            <h2>L’ÉCTRICITÉ</h2>
-            <a href="#">
-                <img src="src/images/catalogingelec.png" alt=""  class="img-responsive"/>
-                <p > LA SOMACOGIR  vous conseille et vous apporte La Solution adaptée en matériel électrique
-                  résidentiel, tertiaire et industriel en partenariat avec les grandes marques internationales.
-                  SOMACOGIR intervient dans les secteurs des énergies renouvelables; éclairage, éclairage BT,
-                  réseau MT, informatique, alarme, aération et climatisation, outillage, automatisme...
-                </p>
-            </a>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-            <div class="thumbnail text-center">
-                <h2>QUINCAILLERIE</h2>
-                <a href="#">
-                    <img src="src/images/catalogquincaillerie.jpg" alt=""  class="img-responsive"/>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id soluta consequatur? Laborum, consequuntur. Eum, aliquid sint maiores recusandae repudiandae autem ab. In vero iste totam, porro explicabo excepturi quas. </p>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-            <div class="thumbnail text-center">
-                <h2>OUTILLAGE</h2>
-                <a href="#">
-                    <img src="src/images/catalogoutilage.png" alt=""  class="img-responsive"/>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id soluta consequatur? Laborum, consequuntur. Eum, aliquid sint maiores recusandae repudiandae autem ab. In vero iste totam, porro explicabo excepturi quas. </p>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-4">
-            <div class="thumbnail text-center">
-                <h2>HUILES</h2>
-                <a href="#">
-                    <img src="src/images/cataloguehuiles.jpg" alt=""  class="img-responsive"/>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id soluta consequatur? Laborum, consequuntur. Eum, aliquid sint maiores recusandae repudiandae autem ab. In vero iste totam, porro explicabo excepturi quas. </p>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <div class="thumbnail text-center">
-                <h2>POMPES</h2>
-                <a href="#">
-                    <img src="src/images/catalogpompe.jpg" alt=""  class="img-responsive"/>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id soluta consequatur? Laborum, consequuntur. Eum, aliquid sint maiores recusandae repudiandae autem ab. In vero iste totam, porro explicabo excepturi quas. </p>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <div class="thumbnail text-center">
-                <h2>ACIERS</h2>
-                <a href="#">
-                    <img src="src/images/catalogacier.jpg" alt=""  class="img-responsive"/>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id soluta consequatur? Laborum, consequuntur. Eum, aliquid sint maiores recusandae repudiandae autem ab. In vero iste totam, porro explicabo excepturi quas. </p>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <div class="thumbnail text-center">
-                <h2>ADJUVANTS</h2>
-                <a href="#">
-                    <img src="src/images/catalogsika.jpg" alt=""  class="img-responsive"/>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id soluta consequatur? Laborum, consequuntur. Eum, aliquid sint maiores recusandae repudiandae autem ab. In vero iste totam, porro explicabo excepturi quas. </p>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <div class="thumbnail text-center">
-                <h2>GROUPES ELECTROGENES</h2>
-                <a href="#">
-                    <img src="src/images/cataloggroup.jpg" alt=""  class="img-responsive"/>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id soluta consequatur? Laborum, consequuntur. Eum, aliquid sint maiores recusandae repudiandae autem ab. In vero iste totam, porro explicabo excepturi quas. </p>
-                </a>
-            </div>
-        </div>
-
-
-      </div>
-    </div>
-      -->
-  </div>
 
 
 </section>

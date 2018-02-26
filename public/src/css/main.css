@@ -154,7 +154,7 @@ missing code
 #owl-demo .item img{
     display: block;
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
 
 .owl-dots {
@@ -352,7 +352,7 @@ width: 300px;
 #catalogue a img{
     width: 200px;
     height: 190px;
-   
+
     text-decoration: none;
 
 }
@@ -577,7 +577,7 @@ width: 300px;
     margin-top: 40px;
     width: 100%;
     height: 450px;
-   
+
 }
 
 #huiles .huiles-description {
@@ -604,32 +604,32 @@ width: 300px;
     margin-top: -12px;
     margin-bottom: 12px;
   }
-  
+
   #huiles h3{
       color: #FFF;
-  
+
   }
 
 
 
 
 /* ===================================================
-                        sika 
+                        sika
 ===================================================== */
 #sika  img {
     margin-top: 40px;
     width: 100%;
     height: 450px;
-   
+
 }
 #sika .sika-description {
     background-color:#f4f4f3;
     font-size:17px;
-    
+
 }
 
 
-  
+
   #sika .product-image{
     background-color: #484756;
     background-color: #4a375a;
@@ -642,10 +642,10 @@ width: 300px;
     margin-top: -12px;
     margin-bottom: 12px;
   }
-  
+
   #sika h3{
       color: #FFF;
-  
+
   }
 
 
@@ -659,16 +659,16 @@ width: 300px;
     margin-top: 40px;
     width: 100%;
     height: 450px;
-   
+
 }
 QUINCAILLERIE .sika-description {
     background-color:#f4f4f3;
     font-size:17px;
-    
+
 }
 
 
-  
+
   #QUINCAILLERIE.product-image{
     background-color: #484756;
     background-color: #4a375a;
@@ -681,24 +681,24 @@ QUINCAILLERIE .sika-description {
     margin-top: -12px;
     margin-bottom: 12px;
   }
-  
+
   #QUINCAILLERIE h3{
       color: #FFF;
-  
+
   }  img {
     margin-top: 40px;
     width: 100%;
     height: 450px;
-   
+
 }
 #QUINCAILLERIE .QUINCAILLERIE-description {
     background-color:#f4f4f3;
     font-size:17px;
-    
+
 }
 
 
-  
+
   #QUINCAILLERIE .product-image{
     background-color: #484756;
     background-color: #4a375a;
@@ -711,10 +711,10 @@ QUINCAILLERIE .sika-description {
     margin-top: -12px;
     margin-bottom: 12px;
   }
-  
+
   #QUINCAILLERIE h3{
       color: #FFF;
-  
+
   }
 
 
@@ -726,17 +726,17 @@ QUINCAILLERIE .sika-description {
     margin-top: 40px;
     width: 100%;
     height: 450px;
-   
+
 }
 #groupes .groupes-description {
     background-color:#f4f4f3;
     font-size:17px;
     padding-bottom: 13px
-    
+
 }
 
 
-  
+
   #groupes .product-image{
     background-color: #484756;
     background-color: #4a375a;
@@ -749,8 +749,8 @@ QUINCAILLERIE .sika-description {
     margin-top: -12px;
     margin-bottom: 12px;
   }
-  
+
   #groupes h3{
       color: #FFF;
-  
+
   }

@@ -654,17 +654,6 @@ class MySqlGrammar extends Grammar
     }
 
     /**
-     * Create the column definition for a year type.
-     *
-     * @param  \Illuminate\Support\Fluent  $column
-     * @return string
-     */
-    protected function typeYear(Fluent $column)
-    {
-        return 'year';
-    }
-
-    /**
      * Create the column definition for a binary type.
      *
      * @param  \Illuminate\Support\Fluent  $column

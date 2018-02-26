@@ -175,10 +175,10 @@ class ResponseHeaderBagTest extends TestCase
 
         $cookies = $bag->getCookies(ResponseHeaderBag::COOKIES_ARRAY);
 
-        $this->assertArrayHasKey('foo', $cookies['foo.bar']['/path/foo']);
-        $this->assertArrayHasKey('foo', $cookies['foo.bar']['/path/bar']);
-        $this->assertArrayHasKey('foo', $cookies['bar.foo']['/path/bar']);
-        $this->assertArrayHasKey('foo', $cookies['']['/']);
+        $this->assertTrue(isset($cookies['foo.bar']['/path/foo']['foo']));
+        $this->assertTrue(isset($cookies['foo.bar']['/path/bar']['foo']));
+        $this->assertTrue(isset($cookies['bar.foo']['/path/bar']['foo']));
+        $this->assertTrue(isset($cookies['']['/']['foo']));
     }
 
     public function testRemoveCookie()
@@ -191,19 +191,19 @@ class ResponseHeaderBagTest extends TestCase
         $this->assertTrue($bag->has('set-cookie'));
 
         $cookies = $bag->getCookies(ResponseHeaderBag::COOKIES_ARRAY);
-        $this->assertArrayHasKey('/path/foo', $cookies['foo.bar']);
+        $this->assertTrue(isset($cookies['foo.bar']['/path/foo']));
 
         $bag->removeCookie('foo', '/path/foo', 'foo.bar');
         $this->assertTrue($bag->has('set-cookie'));
 
         $cookies = $bag->getCookies(ResponseHeaderBag::COOKIES_ARRAY);
-        $this->assertArrayNotHasKey('/path/foo', $cookies['foo.bar']);
+        $this->assertFalse(isset($cookies['foo.bar']['/path/foo']));
 
         $bag->removeCookie('bar', '/path/bar', 'foo.bar');
         $this->assertFalse($bag->has('set-cookie'));
 
         $cookies = $bag->getCookies(ResponseHeaderBag::COOKIES_ARRAY);
-        $this->assertArrayNotHasKey('foo.bar', $cookies);
+        $this->assertFalse(isset($cookies['foo.bar']));
     }
 
     public function testRemoveCookieWithNullRemove()
@@ -213,11 +213,11 @@ class ResponseHeaderBagTest extends TestCase
         $bag->setCookie(new Cookie('bar', 'foo', 0));
 
         $cookies = $bag->getCookies(ResponseHeaderBag::COOKIES_ARRAY);
-        $this->assertArrayHasKey('/', $cookies['']);
+        $this->assertTrue(isset($cookies['']['/']));
 
         $bag->removeCookie('foo', null);
         $cookies = $bag->getCookies(ResponseHeaderBag::COOKIES_ARRAY);
-        $this->assertArrayNotHasKey('foo', $cookies['']['/']);
+        $this->assertFalse(isset($cookies['']['/']['foo']));
 
         $bag->removeCookie('bar', null);
         $cookies = $bag->getCookies(ResponseHeaderBag::COOKIES_ARRAY);

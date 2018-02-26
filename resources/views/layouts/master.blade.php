@@ -4,9 +4,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content=
+    "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    name="viewport" />
+    <link rel="icon" type="image/png" href="src/images/ggg.png">
     <meta name="news_keywords" content="appareillage electrique, fabrication appareillage" />
     <meta name="keywords" content="Somacogir" />
-
+    <meta name="description" content="La société SOMACOGIR, est spécialisée dans la distribution de matériels et
+     outillage BTP ainsi que l’équipement industriel" />
 
     <title>@yield('title')</title>
 

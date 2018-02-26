@@ -1029,7 +1029,7 @@ trait HasAttributes
     }
 
     /**
-     * Get the attributes that were changed.
+     * Get the attributes that was changed.
      *
      * @return array
      */

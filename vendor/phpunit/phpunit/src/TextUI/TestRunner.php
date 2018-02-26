@@ -205,7 +205,7 @@ class TestRunner extends BaseTestRunner
         }
 
         if ($arguments['beStrictAboutChangesToGlobalState'] === true) {
-            $suite->setBeStrictAboutChangesToGlobalState(true);
+            $suite->setbeStrictAboutChangesToGlobalState(true);
         }
 
         if (\is_int($arguments['repeat']) && $arguments['repeat'] > 0) {

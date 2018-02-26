@@ -304,16 +304,19 @@ class Process implements \IteratorAggregate
             $inheritEnv = true;
         }
 
+        $envBackup = array();
         if (null !== $env && $inheritEnv) {
-            $env += $this->getDefaultEnv();
+            foreach ($env as $k => $v) {
+                $envBackup[$k] = getenv($k);
+                putenv(false === $v || null === $v ? $k : "$k=$v");
+            }
+            $env = null;
         } elseif (null !== $env) {
             @trigger_error('Not inheriting environment variables is deprecated since Symfony 3.3 and will always happen in 4.0. Set "Process::inheritEnvironmentVariables()" to true instead.', E_USER_DEPRECATED);
-        } else {
-            $env = $this->getDefaultEnv();
         }
         if ('\\' === DIRECTORY_SEPARATOR && $this->enhanceWindowsCompatibility) {
             $this->options['bypass_shell'] = true;
-            $commandline = $this->prepareWindowsCommandLine($commandline, $env);
+            $commandline = $this->prepareWindowsCommandLine($commandline, $envBackup, $env);
         } elseif (!$this->useFileHandles && $this->enhanceSigchildCompatibility && $this->isSigchildEnabled()) {
             // last exit code is output on the fourth pipe and caught to work around --enable-sigchild
             $descriptors[3] = array('pipe', 'w');
@@ -328,10 +331,18 @@ class Process implements \IteratorAggregate
         }
 
         if (!is_dir($this->cwd)) {
+            if ('\\' === DIRECTORY_SEPARATOR) {
+                throw new RuntimeException('The provided cwd does not exist.');
+            }
+
             @trigger_error('The provided cwd does not exist. Command is currently ran against getcwd(). This behavior is deprecated since version 3.4 and will be removed in 4.0.', E_USER_DEPRECATED);
         }
 
         $this->process = proc_open($commandline, $descriptors, $this->processPipes->pipes, $this->cwd, $env, $this->options);
+
+        foreach ($envBackup as $k => $v) {
+            putenv(false === $v ? $k : "$k=$v");
+        }
 
         if (!is_resource($this->process)) {
             throw new RuntimeException('Unable to launch a new process.');
@@ -1620,7 +1631,7 @@ class Process implements \IteratorAggregate
         return true;
     }
 
-    private function prepareWindowsCommandLine($cmd, array &$env)
+    private function prepareWindowsCommandLine($cmd, array &$envBackup, array &$env = null)
     {
         $uid = uniqid('', true);
         $varCount = 0;
@@ -1633,7 +1644,7 @@ class Process implements \IteratorAggregate
                     [^"%!^]*+
                 )++
             ) | [^"]*+ )"/x',
-            function ($m) use (&$env, &$varCache, &$varCount, $uid) {
+            function ($m) use (&$envBackup, &$env, &$varCache, &$varCount, $uid) {
                 if (!isset($m[1])) {
                     return $m[0];
                 }
@@ -1651,7 +1662,13 @@ class Process implements \IteratorAggregate
                 $value = '"'.preg_replace('/(\\\\*)"/', '$1$1\\"', $value).'"';
                 $var = $uid.++$varCount;
 
-                $env[$var] = $value;
+                if (null === $env) {
+                    putenv("$var=$value");
+                } else {
+                    $env[$var] = $value;
+                }
+
+                $envBackup[$var] = false;
 
                 return $varCache[$m[0]] = '!'.$var.'!';
             },
@@ -1718,28 +1735,5 @@ class Process implements \IteratorAggregate
         $argument = preg_replace('/(\\\\+)$/', '$1$1', $argument);
 
         return '"'.str_replace(array('"', '^', '%', '!', "\n"), array('""', '"^^"', '"^%"', '"^!"', '!LF!'), $argument).'"';
-    }
-
-    private function getDefaultEnv()
-    {
-        if (\PHP_VERSION_ID >= 70100) {
-            $env = getenv();
-        } else {
-            $env = array();
-
-            foreach ($_SERVER as $k => $v) {
-                if (is_string($v) && false !== $v = getenv($k)) {
-                    $env[$k] = $v;
-                }
-            }
-        }
-
-        foreach ($_ENV as $k => $v) {
-            if (is_string($v)) {
-                $env[$k] = $v;
-            }
-        }
-
-        return $env;
     }
 }

@@ -227,7 +227,7 @@ class NativeSessionStorageTest extends TestCase
         $this->assertFalse($storage->isStarted());
 
         $key = $storage->getMetadataBag()->getStorageKey();
-        $this->assertArrayNotHasKey($key, $_SESSION);
+        $this->assertFalse(isset($_SESSION[$key]));
         $storage->start();
     }
 

@@ -9,7 +9,7 @@
  */
 namespace PHPUnit\Framework\MockObject\Matcher;
 
-use PHPUnit\Framework\MockObject\Invocation as BaseInvocation;
+use PHPUnit\Framework\MockObject\Invocation;
 
 /**
  * Invocation matcher which allows any parameters to a method.
@@ -25,11 +25,11 @@ class AnyParameters extends StatelessInvocation
     }
 
     /**
-     * @param BaseInvocation $invocation
+     * @param Invocation $invocation
      *
      * @return bool
      */
-    public function matches(BaseInvocation $invocation)
+    public function matches(Invocation $invocation)
     {
         return true;
     }
